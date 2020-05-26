@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>assettoMulti</Name>
+  <Repository>gkusch99/assettoMulti</Repository>
+  <Registry>https://hub.docker.com/r/gkusch99/assettomulti/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project/>
+  <Overview>Self-hosted Assetto Server Docker Container.</Overview>
+  <Category>Network:Management Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8772]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/gkusch99/unraid-images/master/images/assettoGreg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1527398179</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Self-hosted Assetto Server Docker Container.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8772</HostPort>
+        <ContainerPort>8772</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="8772" Default="8772" Mode="tcp" Description="Container Port: 8772" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+</Container>
