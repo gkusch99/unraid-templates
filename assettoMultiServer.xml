@@ -29,10 +29,26 @@
         <ContainerPort>8772</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8772</HostPort>
+        <ContainerPort>8772</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8772</HostPort>
+        <ContainerPort>8772</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data/>
   <Environment/>
   <Labels/>
   <Config Name="Host Port 1" Target="8772" Default="8772" Mode="tcp" Description="Container Port: 8772" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+  <Config Name="Host Port 1" Target="9601" Default="9601" Mode="tcp" Description="Container Port: 9601" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+  <Config Name="Host Port 1" Target="8772" Default="8772" Mode="tcp" Description="Container Port: 9602" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+  <Config Name="Host Port 1" Target="8772" Default="8772" Mode="tcp" Description="Container Port: 8772" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+  <Config Name="Host Port 1" Target="8772" Default="8772" Mode="tcp" Description="Container Port: 8772" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+  <Config Name="Host Port 1" Target="8772" Default="8772" Mode="tcp" Description="Container Port: 8772" Type="Port" Display="always" Required="true" Mask="false">8772</Config>
+
 </Container>
