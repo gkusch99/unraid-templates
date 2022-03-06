@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Valheim Server</Name>
+  <Repository>lloesche/valheim-server</Repository>
+  <Registry>https://hub.docker.com/r/lloesche/valheim-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/lloesche/valheim-server/</Support>
+  <Project/>
+  <Overview>Self-hosted Valheim Server Docker Container.</Overview>
+  <Category>Network:Management Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/valheim.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1527398179</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Self-hosted Valheim Server Docker Container.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2456</HostPort>
+        <ContainerPort>2456</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>2457</HostPort>
+        <ContainerPort>2457</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8772</HostPort>
+        <ContainerPort>8772</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/valheim/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/valheim/data</HostDir>
+      <ContainerDir>/opt/valheim</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>SERVER_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WORLD_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SERVER_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SERVER_PUBLIC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>STATUS_HTTP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SUPERVISOR_HTTP</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Game Port 1" Target="2456" Default="2456" Mode="udp" Description="Container Port: 2456" Type="Port" Display="always" Required="true" Mask="false">2456</Config>
+  <Config Name="Game Port 2" Target="2457" Default="2457" Mode="udp" Description="Container Port: 2457" Type="Port" Display="always" Required="true" Mask="false">2457</Config>
+  <Config Name="Status Port" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Supervisor Port" Target="9001" Default="9001" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="always" Required="true" Mask="false">9001</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Path where shared folders are located.&amp;lt;br&amp;gt;Container Path: /config" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data" Target="/opt/valheim" Default="" Mode="rw" Description="Path where shared folders are located.&amp;lt;br&amp;gt;Container Path: /opt/valheim" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Server Password" Target="SERVER_PASS" Default="" Mode="" Description="Password for players to access the Valheim server. (5 characters or greater)" Type="Variable" Display="always" Required="false" Mask="true"/>
+
+</Container>
