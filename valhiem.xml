@@ -24,8 +24,8 @@
   <Config Name="Server Password" Target="SERVER_PASS" Default="REPLACE ME" Mode="" Description="Password for players to access the Valheim server. (5 characters or greater)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Status Page" Target="STATUS_HTTP" Default="false" Mode="" Description="Change to create new worlds...?" Type="Variable" Display="always" Required="false" Mask="false"/> 
   <Config Name="Supervisor Page" Target="SUPERVISOR_HTTP" Default="false" Mode="" Description="Change to create new worlds...?" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Path where shared folders are located.&amp;lt;br&amp;gt;Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/valheim/config</Config>
-  <Config Name="Data" Target="/opt/valheim" Default="/mnt/user/appdata/valheim/data" Mode="rw" Description="Path where shared folders are located.&amp;lt;br&amp;gt;Container Path: /opt/valheim" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/valheim/data</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Path where shared folders are located.&amp;lt;br&amp;gt;Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Data" Target="/opt/valheim" Default="" Mode="rw" Description="Path where shared folders are located.&amp;lt;br&amp;gt;Container Path: /opt/valheim" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Game Port 1" Target="2456" Default="2456" Mode="udp" Description="Container Port: 2456" Type="Port" Display="always" Required="true" Mask="false">2456</Config>
   <Config Name="Game Port 2" Target="2457" Default="2457" Mode="udp" Description="Container Port: 2457" Type="Port" Display="always" Required="true" Mask="false">2457</Config>
   <Config Name="Status Port" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
