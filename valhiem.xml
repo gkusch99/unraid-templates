@@ -41,50 +41,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/valheim/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/valheim/data</HostDir>
-      <ContainerDir>/opt/valheim</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value/>
-      <Name>SERVER_NAME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>WORLD_NAME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>SERVER_PASS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>SERVER_PUBLIC</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>STATUS_HTTP</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>SUPERVISOR_HTTP</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Labels/>
   <Config Name="Game Port 1" Target="2456" Default="2456" Mode="udp" Description="Container Port: 2456" Type="Port" Display="always" Required="true" Mask="false">2456</Config>
   <Config Name="Game Port 2" Target="2457" Default="2457" Mode="udp" Description="Container Port: 2457" Type="Port" Display="always" Required="true" Mask="false">2457</Config>
