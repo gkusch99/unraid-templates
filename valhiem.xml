@@ -23,6 +23,7 @@
   <Description>Self-hosted Valheim Server Docker Container.</Description>
   <Networking>
     <Mode>bridge</Mode>
+    <Publish/>
   </Networking>
   <Labels/>
   <Config Name="Game Port 1" Target="2456" Default="2456" Mode="udp" Description="Container Port: 2456" Type="Port" Display="always" Required="true" Mask="false">2456</Config>
